@@ -3,7 +3,7 @@
 
       <div class="row">
         <div class="col-xxl-12">
-          <div class="team__items-7">
+          <div class="team__items-7" @mousemove="handleMouseMove">
             <a href="team-details.html">
               <div class="team__item-7 fade_bottom_3">
                 <div class="team__name-wrap-7">
@@ -108,6 +108,23 @@ export default {
     Preloader,
     // TeamSlider,
     MainLayout
+  },
+
+  methods: {         
+    handleMouseMove(event) {
+      // Get the target element (team item)
+      const teamItem = event.currentTarget;
+
+      // Get the bounding rect of the team item
+      const contentBox = teamItem.getBoundingClientRect();
+
+      // Calculate the mouse position relative to the team item
+      const dx = event.clientX - contentBox.x;
+      const dy = event.clientY - contentBox.y;
+
+      // Apply transform style to the hover element within the team item
+      teamItem.querySelector('.team__hover-7').style.transform = `translate(${dx}px, ${dy}px)`;
+    }
   }
 
 }

@@ -7,7 +7,7 @@
 
                 <div class="swiper-slide team__slide">
                     <a href="team-details.html">
-                        <img src="../../../../assets/imgs/team/gautam.jpeg" alt="Team Member">
+                        <!-- <img src="../../../../assets/imgs/team/gautam.jpeg" alt="Team Member"> -->
                         <div class="team__info">
                             <h4 class="team__member-name-6">Gautam Sharma</h4>
                             <h5 class="team__member-role-6">Web Developer</h5>
@@ -18,7 +18,7 @@
             <swiper-slide>
                 <div class="swiper-slide team__slide">
                     <a href="team-details.html">
-                        <img src="../../../../assets/imgs/team/vivek2.jpeg" alt="Team Member">
+                        <!-- <img src="../../../assets/imgs/team/vivek-new.JPEG" alt="Team Member"> -->
                         <div class="team__info">
                             <h4 class="team__member-name-6">Vivek Kumar</h4>
                             <h5 class="team__member-role-6">Ui/Ux Designer</h5>
@@ -29,7 +29,7 @@
             <swiper-slide>
                 <div class="swiper-slide team__slide">
                     <a href="team-details.html">
-                        <img src="../../../../assets/imgs/team/team-ledaer.jpg" alt="Team Member">
+                        <!-- <img src="../../../../assets/imgs/team/team-ledaer.jpg" alt="Team Member"> -->
                         <div class="team__info">
                             <h4 class="team__member-name-6">Harmanjit Singh</h4>
                             <h5 class="team__member-role-6">Development Head</h5>
@@ -40,7 +40,7 @@
             <swiper-slide>
                 <div class="swiper-slide team__slide">
                     <a href="team-details.html">
-                        <img src="../../../../assets/imgs/team/team-ledaer.jpg" alt="Team Member">
+                        <!-- <img src="../../../../assets/imgs/team/team-ledaer.jpg" alt="Team Member"> -->
                         <div class="team__info">
                             <h4 class="team__member-name-6">Harmanjit Singh</h4>
                             <h5 class="team__member-role-6">Development Head</h5>
@@ -51,7 +51,7 @@
             <swiper-slide>
                 <div class="swiper-slide team__slide">
                     <a href="team-details.html">
-                        <img src="../../../../assets/imgs/team/team-ledaer.jpg" alt="Team Member">
+                        <!-- <img src="../../../../assets/imgs/team/team-ledaer.jpg" alt="Team Member"> -->
                         <div class="team__info">
                             <h4 class="team__member-name-6">Harmanjit Singh</h4>
                             <h5 class="team__member-role-6">Development Head</h5>
@@ -59,7 +59,7 @@
                     </a>
                 </div>
             </swiper-slide>
-            ...
+            ... 
         </swiper>
     </div>
 </template>

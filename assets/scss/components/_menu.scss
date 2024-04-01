@@ -38,7 +38,7 @@
       color: var(--white);
       padding: 29px 0;
       outline: none;
-      text-transform: capitalize;
+      text-transform: uppercase !important;
       transform: translateY(var(--y)) translateZ(0);
       transition: transform .4s ease, box-shadow .4s ease;
 
@@ -624,4 +624,8 @@
   .menu-heading {
     color: var(--black-2);
   }
+}
+
+.offcanvas__logo img  { 
+  filter: brightness(100);
 }

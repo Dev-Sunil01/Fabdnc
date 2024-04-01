@@ -125,6 +125,12 @@ $xs: '(max-width: 575px)';
   object-fit: cover;
 }
 
+.story-img-short { 
+  width: 230px !important;
+  height: 140px;
+  object-fit: cover;
+}
+
 .menu-anim-link {
   position: absolute;
   top: 0;
@@ -231,6 +237,7 @@ $xs: '(max-width: 575px)';
 .header__logo-2 img {
   max-width: 160px;
 }
+
 
 .footer__logo-3 img {
   width: 40% !important;
@@ -704,6 +711,8 @@ $xs: '(max-width: 575px)';
 
 .hero-imageWrapper img {
   width: 240px;
+  height: 160px;
+  object-fit: cover;
 }
 
 /*----------------------------------------*/
@@ -1114,6 +1123,49 @@ $xs: '(max-width: 575px)';
 	@media (max-width: 1200px) {
 		display: none;
 	}
+}
+
+.home-bg-image {
+  background-image: url(../imgs/home-7/client-meet.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.home-vector {
+  position: absolute;
+  top: 10%;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: shape;
+  right: 30px;
+
+  width: 600px;
+  z-index: 1;
+}
+
+@keyframes shape {
+	0% {
+		transform: translateY(-5%);
+	}
+
+  50% {
+    transform: translateY(0);
+  }
+
+	100% {
+		transform: translateY(5%);
+	}
+}
+
+.home-vector img { 
+  width: 100%;
+  object-fit: cover;
 }
 
 /*-------------home-page-end-------------*/

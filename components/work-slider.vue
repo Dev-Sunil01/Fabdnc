@@ -1,21 +1,21 @@
 <template>
     <swiper :slides-per-view="3" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange">
-        <swiper-slide>
+        <swiper-slide  v-for="item in items"  :key="item" >
             <div class="portfolio__slide-7">
                 <div class="slide-img">
-                    <a href="portfolio-details.html"><img src="../assets/imgs/work/psd-one.jpg"
+                    <a href="portfolio-details.html"><img :src="item.image"
                             alt="Portfolio Image"></a>
                 </div>
                 <div class="slide-content">
                     <a href="portfolio-details.html">
-                        <h2 class="title"> Servicetech North  <span>America</span> </h2>
+                        <h2 class="title"> {{ item.image_title }} </h2>
                     </a>
                     <h4 class="date">LANDING PAGE MOCKUP</h4>
                 </div>
             </div>
 
         </swiper-slide>
-        <swiper-slide>
+        <!-- <swiper-slide>
             <div class="portfolio__slide-7">
                 <div class="slide-img">
                     <a href="portfolio-details.html"><img src="../assets/imgs/work/framest.png"
@@ -177,10 +177,17 @@
                     <h4 class="date">PHP,WORDPRESS,HTML,CSS3</h4>
                 </div>
             </div>
-        </swiper-slide>
+        </swiper-slide> -->
 
     </swiper>
 </template>
+
+<script setup>
+
+const { data: items } = await useFetch("https://fabdnc.com/laravel/api/homepage/case_study")
+
+</script>
+
 <script>
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';

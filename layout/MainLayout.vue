@@ -1,13 +1,17 @@
 <script >
+
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
 
-components: {
-  Header,
-  Footer
-},
+  components: {
+    Header,
+    Footer
+  },
+  
+ 
+
 }
 // const title = ref("Next-kit - Nuxt3 Typescript Free UI kit built with Vuetify3");
 // useHead({
@@ -21,11 +25,13 @@ components: {
 </script>
 
 <template>
-  <v-app >
-    <Header/>
+  
+  <v-app>
+    <Header />
+   
     <v-main>
-      <slot />  
+      <slot />
     </v-main>
-    <Footer/>
+    <Footer />
   </v-app>
 </template>

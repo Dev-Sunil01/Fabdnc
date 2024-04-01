@@ -1,5 +1,7 @@
+
 <template>
     <MainLayout>
+        <div class="body-bg"></div>
         <div>
             <!-- Cursor Animation -->
 
@@ -17,14 +19,6 @@
             <button id="scroll_top" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
 
 
-            <!-- Header area start -->
-            <!-- <Header  /> -->
-            <!-- Header area end -->
-
-
-            <!-- Offcanvas area start -->
-
-            <!-- Offcanvas area end -->
 
             <!-- Switcher Area Start -->
             <div class="switcher__area">
@@ -90,7 +84,7 @@
 
 
             <!-- Header area start -->
-            
+
             <!-- Header area end -->
 
 
@@ -99,7 +93,8 @@
                 <div class="offcanvas__body">
                     <div class="offcanvas__left">
                         <div class="offcanvas__logo">
-                            <a href="index.html"><img src="../assets/imgs/logo/site-logo-white-2.png" alt="Offcanvas Logo"></a>
+                            <a href="index.html"><img src="../assets/imgs/logo/site-logo-white-2.png"
+                                    alt="Offcanvas Logo"></a>
                         </div>
                         <div class="offcanvas__social">
                             <h3 class="social-title">Follow Us</h3>
@@ -305,115 +300,110 @@
             <!-- Offcanvas area end -->
 
 
-            <div id="smooth-wrapper">
+            <div id="scroll-container" ref="scrollContainer">
                 <div id="smooth-content">
-                    <main>
 
-                        <!-- Hero area start -->
-                        <section class="service__hero-2">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xxl-12">
-                                        <div class="service__hero-inner-2">
-                                            <div class="service__hero-left-2 hero-imageWrapper">
-                                                <img src="../assets/imgs/home-7/index-hero-sub1.jpg" alt="Image" class="image-1">
-                                                <img src="../assets/imgs/home-7/index-hero-sub2.jpg" alt="Image" class="image-2">
-                                                <img src="../assets/imgs/home-7/index-hero-sub3.jpg" alt="Image" class="image-3">
-                                                <img src="../assets/imgs/home-7/index-hero-sub4.jpg" alt="Image" class="image-4">
-                                            </div>
-                                            <div class="service__hero-right-2 hero7__thum-anim">
-                                                <h1 class="title creative">Reward Your Innovation by <span class="solution">Professional Team</span>
-                                                </h1>
-                                                <p class="animate_content"> We take a similar approach to design commercial
-                                                    we do impactfully
-                                                    approches over the flowchart
-                                                    of
-                                                    user friendly wireframe.</p>
-                                                <img src="../assets/imgs/home-7/scroll.png" alt="scroll Image" class="scroll">
-                                            </div>
-                                        </div>
+
+
+                    <!-- Hero area start -->
+                    <!-- hero -->
+                    <section class="hero__area-4 sp-x">
+                        <div class="hero__content-8 position-relative">
+                            <h2 class="sec-title-4 sec-title-5 animation__char_come">Design <img
+                                    src="../assets/imgs/shape/23.png" alt="shape"></h2>
+                            <h2 class="sec-title-4 animation__char_come">Development <span>Craft</span></h2>
+                            <div class="scroll-wrapper">
+                                <div class="scroll-down">
+                                    <span>scroll</span>
+                                    <img src="../assets/imgs/essential-img/scrolldown.svg" alt="Scroll Down">
+                                </div>
+                                <p class="discription hero__text-animation">Static and dynamic secure code review can
+                                    prevent a 0day
+                                    before your product is
+                                    even
+                                    released. We can integrate with your dev environment</p>
+                            </div>
+                            <div class="home-vector" >
+                                  <img src="../assets/imgs/hh.png" />  
+                            </div>    
+                        </div>
+                    </section>
+
+                    <!-- Hero area end -->
+
+
+                    <div class="video__area about__img-2 home-bg-image">
+
+                    </div>
+
+
+                    <!-- About area start -->
+                    <section class="about__area-7">
+                        <div class="container pt-130 pb-110">
+                            <div class="row">
+                                <div class="col-xxl-12">
+                                    <div class="sec-title-wrapper">
+                                        <h2 class="sec-title title-anim">We want to bring <br> business and the digital
+                                            <br> world together
+                                        </h2>
                                     </div>
                                 </div>
                             </div>
-
-                            <img src="../assets/imgs/home-7/shape-6.png" alt="Shape Image" class="shape-1">
-                        </section>
-                        <!-- Hero area end -->
-
-
-                        <div class="video__area about__img-2">
-                            <img src="../assets/imgs/home-7/client-meet.jpg" class="object-cover" alt="Video Image" data-speed="0.2">
+                            <div class="row">
+                                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                                    <div class="about__left-7">
+                                        <img src="../assets/imgs/home-7/index-hero-sub2.jpg" alt="Image" data-speed="auto">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                                    <div class="about__mid-7 text-anim">
+                                        <p>We believe that we’ve managed to achieve what we set out to do. Today, we’re
+                                            proud to bring
+                                            together people who share our passion for change. This is how Outcrowd
+                                            began. We were just a bunch
+                                            of talented Ukrainians united by a common vision: creating a synergy of
+                                            business and the digital
+                                            world.
+                                        </p>
+                                        <p>We were tired of stale design solutions. We felt strongly that design was
+                                            more than pretty
+                                            pictures: it was a powerful tool that could really transform business.</p>
+                                        <img src="../assets/imgs/home-7/shape-5.png" alt="Shape" class="signature">
+                                        <img src="../assets/imgs/home-7/index-hero-sub3.jpg" alt="Image" class="image-1">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                                    <div class="about__right-7">
+                                        <img src="../assets/imgs/home-7/index-hero-sub4.jpg" alt="Image" data-speed="0.7">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
+                        <img src="../assets/imgs/home-7/shape-4.png" alt="Shape" class="shape-1">
+                    </section>
+                    <!-- About area end -->
 
-                        <!-- About area start -->
-                        <section class="about__area-7">
-                            <div class="container pt-130 pb-110">
-                                <div class="row">
-                                    <div class="col-xxl-12">
-                                        <div class="sec-title-wrapper">
-                                            <h2 class="sec-title title-anim">We want to bring <br> business and the digital
-                                                <br> world together
-                                            </h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-                                        <div class="about__left-7">
-                                            <img src="../assets/imgs/home-7/index-hero-sub2.jpg" alt="Image" data-speed="auto">
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
-                                        <div class="about__mid-7 text-anim">
-                                            <p>We believe that we’ve managed to achieve what we set out to do. Today, we’re
-                                                proud to bring
-                                                together people who share our passion for change. This is how Outcrowd
-                                                began. We were just a bunch
-                                                of talented Ukrainians united by a common vision: creating a synergy of
-                                                business and the digital
-                                                world.
+
+                    <!-- Service area start -->
+                    <section class="service__area-7 pt-130">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12">
+                                    <div class="service__items-7 animation_service_7">
+                                        <div class="service__item-7" v-for="service in services" :key="service">
+                                            <a href="service-details.html">
+                                                <h3 class="service__title-7"> {{ service.title }} </h3>
+                                            </a>
+                                            <p>{{ service.description }}
                                             </p>
-                                            <p>We were tired of stale design solutions. We felt strongly that design was
-                                                more than pretty
-                                                pictures: it was a powerful tool that could really transform business.</p>
-                                            <img src="../assets/imgs/home-7/shape-5.png" alt="Shape" class="signature">
-                                            <img src="../assets/imgs/home-7/index-hero-sub3.jpg" alt="Image" class="image-1">
+                                            <ul>
+                                                <li>+ Logo Design</li>
+                                                <li>+ Advertisement</li>
+                                                <li>+ Promotion</li>
+                                            </ul>
                                         </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
-                                        <div class="about__right-7">
-                                            <img src="../assets/imgs/home-7/index-hero-sub4.jpg" alt="Image" data-speed="0.7">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <img src="../assets/imgs/home-7/shape-4.png" alt="Shape" class="shape-1">
-                        </section>
-                        <!-- About area end -->
-
-
-                        <!-- Service area start -->
-                        <section class="service__area-7 pt-130">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xxl-12">
-                                        <div class="service__items-7 animation_service_7">
-                                            <div class="service__item-7">
-                                                <a href="service-details.html">
-                                                    <h3 class="service__title-7">Graphic <span>Design</span> </h3>
-                                                </a>
-                                                <p>We help brands stand out through aweful, elegant visual design. Our
-                                                    design mainly philosophy.
-                                                </p>
-                                                <ul>
-                                                    <li>+ Logo Design</li>
-                                                    <li>+ Advertisement</li>
-                                                    <li>+ Promotion</li>
-                                                </ul>
-                                            </div>
-                                            <div class="service__item-7">
+                                        <!-- <div class="service__item-7">
                                                 <a href="service-details.html">
                                                     <h3 class="service__title-7">UI/UX <span>Design</span> </h3>
                                                 </a>
@@ -441,7 +431,8 @@
                                             </div>
                                             <div class="service__item-7">
                                                 <a href="service-details.html">
-                                                    <h3 class="service__title-7">Web Development <span> & Design</span> </h3>
+                                                    <h3 class="service__title-7">Web Development <span> & Design</span>
+                                                    </h3>
                                                 </a>
                                                 <p>We help brands stand out through aweful, elegant visual design. Our
                                                     design mainly philosophy.
@@ -477,66 +468,64 @@
                                                     <li>+ Advertisement</li>
                                                     <li>+ Promotion</li>
                                                 </ul>
-                                            </div>
-                                        </div>
+                                            </div> -->
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                        <!-- Service area end -->
+                        </div>
+                    </section>
+                    <!-- Service area end -->
 
 
-                       
 
 
-                        <!-- Portfolio area start -->
-                        <section class="portfolio__area-7">
-                            <div class="container pt-140 pb-100">
-                                <div class="row">
-                                    <div class="col-xxl-12">
-                                        <div class="sec-title-wrapper text-anim">
-                                            <h2 class="sec-title title-anim">work</h2>
-                                            <p class="sec-text">Worked with global brands & agency at the
-                                                intersection of flat design and digital
-                                                technology.</p>
-                                        </div>
+
+                    <!-- Portfolio area start -->
+                    <section class="portfolio__area-7">
+                        <div class="container pt-140 pb-100">
+                            <div class="row" v-for="casestudy in caseStudy " :key="casestudy">
+                                <div class="col-xxl-12">
+                                    <div class="sec-title-wrapper text-anim">
+                                        <h2 class="sec-title title-anim">{{ casestudy.main_title }}</h2>
+                                        <p class="sec-text">{{ casestudy.main_description }}</p>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="swiper portfolio__slider-7">
-                                <div class="swiper-wrapper">
-                                    <workSliderVue/>
-                                </div>
+                        <div class="swiper portfolio__slider-7">
+                            <div class="swiper-wrapper">
+                                <workSliderVue />
                             </div>
-                        </section>
-                        <!-- Portfolio area end -->
+                        </div>
+                    </section>
+                    <!-- Portfolio area end -->
 
 
-                        <!-- Team area start -->
-                        <section class="team__area-7">
-                            <h2 class="team__title-7 title-anim">Team</h2>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xxl-12">
-                                        <div class="sec-text pb-100 text-anim">
-                                            <p>We are here to help you achieve your business goals and the team create an
-                                                amazing outstanding
-                                                product for your business.</p>
-                                        </div>
+                    <!-- Team area start -->
+                    <section class="team__area-7">
+                        <h2 class="team__title-7 title-anim">Team</h2>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-12">
+                                    <div class="sec-text pb-100 text-anim">
+                                        <p>We are here to help you achieve your business goals and the team create an
+                                            amazing outstanding
+                                            product for your business.</p>
                                     </div>
                                 </div>
-                                <!-- team component start here  -->
-
-                                <Team/> 
-
                             </div>
-                        </section>
-                        <!-- Team area end -->
+                            <!-- team component start here  -->
+
+                            <Team />
+
+                        </div>
+                    </section>
+                    <!-- Team area end -->
 
 
-                        <!-- Brand area start -->
-                        <!-- <section class="brand__area">
+                    <!-- Brand area start -->
+                    <!-- <section class="brand__area">
                             <div class="container pt-140 pb-140">
                                 <div class="row">
                                     <div class="col-xxl-12">
@@ -566,38 +555,38 @@
                                 </div>
                             </div>
                         </section> -->
-                        <!-- Brand area end -->
+                    <!-- Brand area end -->
 
 
 
 
-                        <!-- CTA area start -->
-                        <section class="cta__area cta__area-7 pt-130">
-                            <div class="container pb-110">
-                                <div class="row">
-                                    <div class="col-xxl-12">
-                                        <div class="cta__content">
-                                            <p class="cta__sub-title">Work with us</p>
-                                            <h2 class="cta__title title-anim">We would love to hear more about your project
-                                            </h2>
-                                            <div class="btn_wrapper">
-                                                <a href="contact.html"
-                                                    class="wc-btn-primary btn-hover btn-item"><span></span>Let’s talk us <i
-                                                        class="fa-solid fa-arrow-right"></i></a>
-                                            </div>
+                    <!-- CTA area start -->
+                    <section class="cta__area cta__area-7 pt-130">
+                        <div class="container pb-110">
+                            <div class="row">
+                                <div class="col-xxl-12">
+                                    <div class="cta__content">
+                                        <p class="cta__sub-title">Work with us</p>
+                                        <h2 class="cta__title title-anim">We would love to hear more about your project
+                                        </h2>
+                                        <div class="btn_wrapper">
+                                            <a href="contact.html"
+                                                class="wc-btn-primary btn-hover btn-item"><span></span>Let’s talk us <i
+                                                    class="fa-solid fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                        <!-- CTA area end -->
+                        </div>
+                    </section>
+                    <!-- CTA area end -->
 
 
-                    </main>
 
 
 
-                   
+
+
 
 
                 </div>
@@ -608,7 +597,16 @@
 </template>
 
 
-<script>
+<script setup>
+
+const { data: posts } = await useFetch('https://fabdnc.com/laravel/api/homepage/banner')
+const { data: services } = await useFetch('https://fabdnc.com/laravel/api/services')
+const { data: caseStudy } = await useFetch('https://fabdnc.com/laravel/api/homepage/case_study')
+ 
+
+</script>
+
+<script >
 
 
 // import Header from '../components/Header.vue'
@@ -618,8 +616,19 @@ import HorizontalVue from '../components/Horizontal.vue';
 import MainLayout from '~/layout/MainLayout.vue';
 import workSliderVue from '~/components/work-slider.vue';
 import Team from "~/pages/Team/team.vue";
+// import axios from 'axios';
+// import gsap from 'gsap-trial';
+// import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
+// import { SplitText } from 'gsap-trial/SplitText'
 
 export default {
+
+    data() {
+        return {
+
+
+        };
+    },
     components: {
         // Header,
         Preloader,
@@ -632,8 +641,20 @@ export default {
     },
 
 
+    mounted() {
 
+
+    },
+
+
+
+    methods: {
+
+
+    }
 
 
 }
 </script>
+
+

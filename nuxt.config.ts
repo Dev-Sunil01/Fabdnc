@@ -3,6 +3,14 @@
 
 
 export default  {
+
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    }
+  },
+
   ssr: false,
   pages: true,
   head: {
@@ -102,6 +110,7 @@ export default  {
   },
   nitro: {
     serveStatic: true,
+    
   },
   devServerHandlers: [],
   hooks: {
@@ -110,6 +119,7 @@ export default  {
              '~/plugins/scroll.js',
              
   ],
+  
 
 
 
