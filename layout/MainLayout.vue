@@ -10,7 +10,6 @@ export default {
     Footer
   },
   
- 
 
 }
 // const title = ref("Next-kit - Nuxt3 Typescript Free UI kit built with Vuetify3");
@@ -27,6 +26,7 @@ export default {
 <template>
   
   <v-app>
+    
     <Header />
    
     <v-main>

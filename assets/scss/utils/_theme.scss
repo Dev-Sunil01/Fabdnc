@@ -76,7 +76,7 @@ img {
 
   &::before {
     position: absolute;
-    content: "";
+    display: none;
     width: 1px;
     height: 100%;
     top: 0;
@@ -86,7 +86,7 @@ img {
 
   &::after {
     position: absolute;
-    content: "";
+    display: none;
     width: 1px;
     height: 100%;
     left: calc(50% - 1px);
@@ -98,6 +98,7 @@ img {
     position: absolute;
     content: "";
     width: 1px;
+    display: none;
     height: 100%;
     right: 0;
     top: 0;

@@ -4,6 +4,9 @@
 
 export default  {
 
+  buildDir: 'dist',
+  
+
   app: {
     head: {
       charset: 'utf-8',
@@ -96,10 +99,11 @@ export default  {
     },
   build: {
     //   extractCSS: false,
-      transpile: ["vuetify,gsap"],
+      publicPath: '_nuxt/dist/',
+      transpile: ["gsap"],
     },
   modules: [
-    '@pinia/nuxt',
+    
     'nuxt-swiper',
     
   ],
@@ -115,7 +119,7 @@ export default  {
   devServerHandlers: [],
   hooks: {
   },
-  plugins: ['~/plugins/vuetify.ts',
+  plugins: [
              '~/plugins/scroll.js',
              
   ],

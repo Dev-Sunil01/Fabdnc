@@ -5,10 +5,8 @@
       <div class="footer__top-2 text-anim">
         <div class="row">
           <div class="col-xxl-12">
-            <h2 class="sec-title-3 title-anim">Get started <br> now</h2>
-            <p class="footer__sub-title">If you would like to work with us or
-              just want to get in touch, we’d love
-              to hear from you!</p>
+            <h2 class="sec-title-3 title-anim">{{ footerTitle }}</h2>
+            <p class="footer__sub-title"> {{ footerDescription }} </p>
           </div>
         </div>
       </div>
@@ -33,7 +31,7 @@
             <div class="footer__subscribe-2">
               <form action="#">
                 <input type="text" name="email" placeholder="Enter your email">
-                <button type="submit" class="submit"><img src="../assets/imgs/icon/arrow-black.png"
+                <button type="submit" class="submit"><img src="../assets/images/arrow-black.png"
                     alt="Arrow Icon"></button>
               </form>
             </div>
@@ -66,10 +64,17 @@
   <!-- Footer area end -->
 </template>
 
-<script>
-export default {
+<script setup >
 
-}
+const { data: items } = await useFetch('https://fabdnc.com/laravel/api/footer')
+
+const footerTitle = items._value[0].footer_title
+
+const footerDescription = items._value[0].footer_description
+
+const address = items._value[0].address
+
+
 </script>
 
 <style scoped>
@@ -84,4 +89,12 @@ export default {
   font-size: 28px;
   font-weight: 700;
 }
+
+
+.footer__area-2 { 
+   background-image: none;
+}
+
+
+
 </style>

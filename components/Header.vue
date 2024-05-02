@@ -1,119 +1,29 @@
 <template>
 	<div>
 		<header :class="{ 'fixed-header': isHeaderFixed }">
-			<div class="header__inner-2">
-				<div class="header__logo-2">
-					<a href="index.html" class="logo-dark"><img src="../assets/imgs/logo/fab-logo.png" alt="Site Logo"></a>
-					<a href="index.html" class="logo-light"><img src="../assets/imgs/logo/fab-logo.png" alt="Site Logo"></a>
-				</div>
-				<div class="header__nav-2">
-					<ul class="main-menu-4 menu-anim">
-						<li class="has-megamenu">
-							<NuxtLink to="/">home </NuxtLink>
-							<ul class="mega-menu-2">
-								<li>
-									<div class="menu-heading">Agency</div>
-									<ul>
-										<li><a href="index.html">Digital Maketing</a></li>
-										<li><a href="index-2.html">Design Studio </a></li>
-										<li><a href="index-3.html">Digital Agency</a></li>
-										<li><a href="index-7.html">creative Agency</a></li>
-										<li><a href="index-6.html">Startup Agency</a></li>
-										<li><a href="index-8.html">modern agency</a></li>
-										<li><a href="index-4.html">personal Portfolio</a></li>
-									</ul>
-								</li>
-								<li>
-									<div class="menu-heading">Agency Dark</div>
-									<ul>
-										<li><a href="index-dark.html">Digital Maketing</a></li>
-										<li><a href="index-2-dark.html">Design Studio</a></li>
-										<li><a href="index-3-dark.html">Digital Agency</a></li>
-										<li><a href="index-7-dark.html">creative Agency</a></li>
-										<li><a href="index-6-dark.html">Startup Agency</a></li>
-										<li><a href="index-8-dark.html">modern agency</a></li>
-										<li><a href="index-4-dark.html">personal Portfolio</a></li>
-									</ul>
-								</li>
-								<li>
-									<div class="menu-heading">Portfolio</div>
-									<ul>
 
-										<li><a href="index-5.html">portfolio showcase</a></li>
-										<li><a href="index-10.html">showcase carousel</a></li>
-										<li><a href="index-12.html">Interactive link</a></li>
-										<li><a href="index-13.html">portfolio masonry</a></li>
-										<li><a href="index-14.html">vertical grid</a></li>
-										<li><a href="index-15.html">Interactive image slider</a></li>
-										<li><a href="index-16.html">showcase parallax</a></li>
-										<li><a href="index-17.html">logo showcase</a></li>
-										<li><a href="index-9.html">showcase slider</a></li>
-										<li><a href="index-11.html">Interactive hover showcase</a></li>
-									</ul>
-								</li>
-								<li>
-									<div class="menu-heading">Portfolio dark</div>
-									<ul>
-										<li><a href="index-5-dark.html">portfolio showcase</a></li>
-										<li><a href="index-10-dark.html">showcase carousel</a></li>
-										<li><a href="index-12-dark.html">Interactive link</a></li>
-										<li><a href="index-13-dark.html">portfolio masonry</a></li>
-										<li><a href="index-14-dark.html">vertical grid</a></li>
-										<li><a href="index-15-dark.html">Interactive image slider</a></li>
-										<li><a href="index-16-dark.html">showcase parallax</a></li>
-										<li><a href="index-17-dark.html">logo showcase</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<NuxtLink to="/about"> About </NuxtLink>
-						</li>
+			<div class="d-flex align-items-center justify-content-between container-fluid">
+				<div class="header__inner-2">
+					<div class="header__logo-2">
+						<a href="index.html" class="logo-dark"><img src="../assets/images/New-logo.png"
+								alt="Site Logo"></a>
+						<a href="index.html" class="logo-light"><img src="../assets/images/New-logo.png"
+								alt="Site Logo"></a>
+					</div>
+					<div class="header__nav-2">
+						<ul class="main-menu-4 menu-anim">
+							<li class="has-megamenu" v-for="item in menuLink" :key="item">
+								<NuxtLink :to="item.menu_link" activeClass="active" > {{ item.menu_name }} </NuxtLink>
 
-						<li>
-							<nuxtLink to="/services">services</nuxtLink>
-							<ul class="main-dropdown">
-								<li><a href="service.html">service</a>
-									<ul class="sub-dropdown">
-										<li><a href="service-dark.html">service dark</a></li>
-										<li><a href="service-2-dark.html">service V.2 dark</a></li>
-										<li><a href="service-3-dark.html">service V.3 dark</a></li>
-										<li><a href="service-4-dark.html">service V.4 dark</a></li>
-										<li><a href="service-5-dark.html">service V.5 dark</a></li>
-										<li><a href="service-6-dark.html">service V.6 dark</a></li>
-										<li><a href="service-details-dark.html">service details dark</a></li>
-									</ul>
-								</li>
-								<li><a href="service-2.html">service V.2</a></li>
-								<li><a href="service-3.html">service V.3</a></li>
-								<li><a href="service-4.html">service V.4</a></li>
-								<li><a href="service-5.html">service V.5</a></li>
-								<li><a href="service-6.html">service V.6</a></li>
-								<li><a href="service-details.html">service details</a></li>
-							</ul>
-						</li>
-						<!-- <li><a href="team.html">team</a>
-							<ul class="main-dropdown">
-								<li><a href="team.html">team</a></li>
-								<li><a href="team-details.html">team details</a></li>
-							</ul>
-						</li> -->
-						<li><a href="blog.html">Blog</a>
-							<ul class="main-dropdown">
-								<li><a href="blog.html">blog</a></li>
-								<li><a href="blog-2.html">blog v.2</a></li>
-								<li><a href="category.html">category</a></li>
-								<li><a href="blog-details.html">blog details</a></li>
-							</ul>
-						</li>
-						<li>
-							<nuxtLink to="/contact">Contact</nuxtLink>
-						</li>
-					</ul>
+							</li>
+
+						</ul>
+					</div>
+
 				</div>
 				<div class="header__nav-icon-7">
-					<button class="menu-icon-2" id="open_offcanvas" @click="toggleDiv"><img
-							src="../assets/imgs/icon/menu-dark.png" alt="Menubar Icon"></button>
+					<button class="menu-icon-2" id="open_offcanvas" @click="offcanvasOpen"><img
+							src="../assets/images/menu-dark.png" alt="Menubar Icon"></button>
 				</div>
 			</div>
 		</header>
@@ -125,7 +35,7 @@
 			<div class="offcanvas__body">
 				<div class="offcanvas__left">
 					<div class="offcanvas__logo">
-						<a href="index.html"><img src="../assets/imgs/logo/fab-logo.png" alt="Offcanvas Logo"></a>
+						<a href="index.html"><img src="../assets/images/fab-logo.png" alt="Offcanvas Logo"></a>
 					</div>
 					<div class="offcanvas__social">
 						<h3 class="social-title">Follow Us</h3>
@@ -147,13 +57,12 @@
 					<div class="offcanvas__menu-wrapper mean-container ">
 						<nav class="offcanvas__menu mean-nav ">
 							<ul class="menu-anim">
-								<li><nuxt-link to="/">home</nuxt-link></li>
+								<li v-for="item in menuLink" :key="item">
+									<nuxt-link :to="item.menu_link">{{ item.menu_name }}</nuxt-link>
+								</li>
 								<!-- <li><nuxt-link to="/team.html">team</nuxt-link></li> -->
 
-								<li><a href="about.html">about </a></li>
 
-								<li><a href="service.html">services </a></li>
-								<li><a href="contact.html">contact</a></li>
 
 
 							</ul>
@@ -177,10 +86,10 @@
 							<li>C-98(B),Ph 7, Ind.Area, Mohali</li>
 						</ul>
 					</div>
-					<img src="../assets/imgs/shape/11.png" alt="shape" class="shape-1">
-					<div class="shape-2">
-						<img src="../assets/imgs/shape/12.png" alt="shape">
-					</div>
+					<!-- <img src="../assets/images/11.png" alt="shape" class="shape-1"> -->
+					<!-- <div class="shape-2">
+						<img src="../assets/images/12.png" alt="shape">
+					</div> -->
 				</div>
 				<div class="offcanvas__close">
 					<button type="button" id="close_offcanvas" @click="offcanvasOpen"><i
@@ -191,7 +100,18 @@
 	</div>
 </template>
 
+
+<script setup >
+
+const { data: items } = await useFetch('https://fabdnc.com/laravel/api/header')
+
+const menuLink = items._value[0].header_menu
+
+</script>
+
 <script>
+
+
 
 
 export default {
@@ -270,8 +190,12 @@ export default {
 <style scoped lang="scss">
 @import '../assets/scss/utils/mixin';
 
-header  {
+header {
 	transition: all 0.2s ease-in-out;
+}
+
+.active {
+  color: green !important;
 }
 
 .fixed-header {
@@ -281,9 +205,12 @@ header  {
 	width: 100%;
 	z-index: 1000;
 	background: #fff;
-	/* Adjust z-index as needed */
-	/* Add any additional styling for your fixed header */
+	border: 1px solid #f9f9f9;
+	box-shadow: 0 0 10px #f1f1f1;
 }
+
+
+
 
 .header-logo img {
 	width: 60px;
@@ -369,7 +296,8 @@ header  {
 .main-menu>li,
 .main-menu-4>li {
 	display: inline-block;
-	margin: 0 38px;
+	margin-right: 0;
+	margin-left: 60px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -379,6 +307,8 @@ header  {
 		margin: 0 19px;
 	}
 }
+
+
 
 .main-menu>li.has-megamenu,
 .main-menu-4>li.has-megamenu {
@@ -1245,4 +1175,7 @@ header  {
 
 .dark .menu-heading {
 	color: var(--black-2);
-}</style>
+}
+
+
+</style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="preloader" v-if="isLoading">
+    <div class="preloader" >
         <div class="loading">
             <div class="bar bar1"></div>
             <div class="bar bar2"></div>
@@ -17,16 +17,13 @@
 export default {
     data() {
         return {
-            isLoading: true,
+            
         };
     },
 
     mounted() {
         // Simulate an asynchronous operation, like fetching data
-        setTimeout(() => {
-            // After the operation is complete, hide the loader
-            this.isLoading = false;
-        }, 2000); // Adjust the timeout as needed
+      
     },
 
 }

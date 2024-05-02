@@ -112,7 +112,7 @@
                                         </div>
                                         <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
                                             <div class="counter__img-3">
-                                                <img src="../../assets/imgs/thumb/counter-3.png" alt="Counter Image">
+                                                <img src="../assets/images/designer-team.jpg" alt="Counter Image">
                                             </div>
                                         </div>
                                     </div>
@@ -149,66 +149,20 @@
 
 
 import { onMounted, onUnmounted, ref } from 'vue';
-import gsap from 'gsap-trial';
-import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
-import { ScrollSmoother } from 'gsap-trial/ScrollSmoother';
+
+
 
 export default {
     data() {
         return {
-            scrollTween: null,
+        
         };
     },
     mounted() {
-        this.initializeScrollEffect();
+        
     },
     methods: {
-        initializeScrollEffect() {
-            const pinWrap = this.$refs.horizGallery.querySelector(".horiz-gallery-strip");
-
-            let pinWrapWidth;
-            let horizontalScrollLength;
-
-            function refresh() {
-                pinWrapWidth = pinWrap.scrollWidth;
-                horizontalScrollLength = pinWrapWidth - window.innerWidth;
-            }
-
-            refresh();
-
-            this.scrollTween = gsap.to(pinWrap, {
-                scrollTrigger: {
-                    scrub: true,
-                    trigger: this.$refs.horizGallery,
-                    pin: this.$refs.horizGallery,
-                    start: "center center",
-                    end: () => `+=${pinWrapWidth}`,
-                    invalidateOnRefresh: true,
-                },
-                x: () => -horizontalScrollLength,
-                ease: "none",
-            });
-
-            pinWrap.querySelectorAll("[data-speed-x]").forEach((el) => {
-                let speed = parseFloat(el.getAttribute("data-speed-x"));
-                gsap.to(el, {
-                    x: () => (1 - speed) * (window.innerWidth + el.offsetWidth),
-                    ease: "none",
-                    scrollTrigger: {
-                        containerAnimation: this.scrollTween,
-                        trigger: el,
-                        onRefresh: (self) => {
-                            let start = Math.max(0, self.start);
-                            self.setPositions(start, start + (self.end - self.start) / Math.abs(speed));
-                            self.animation.progress(0);
-                        },
-                        scrub: true,
-                    },
-                });
-            });
-
-            ScrollTrigger.addEventListener("refreshInit", refresh);
-        },
+       
     },
 };
 </script>
