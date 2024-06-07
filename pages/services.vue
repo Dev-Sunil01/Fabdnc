@@ -7,9 +7,9 @@
                 <div class="row">
                     <div class="col-xxl-12">
                         <div class="hero__title-wrap-7">
-                            <h1 class="hero__title-7">Award-winning <img src="../assets/images/shape-1.png" alt="shape">
+                            <h1 class="hero__title-7">Award-winning <img height="" width="" src="../assets/images/shape-1.png" alt="shape">
                                 digital solution
-                                agency <img src="../assets/images/shape-2.png" alt=""></h1>
+                                agency <img height="" width="" src="../assets/images/shape-2.png" alt=""></h1>
                         </div>
                         <div class="hero__text-7">
                             <h2 class="about">service</h2>
@@ -21,7 +21,7 @@
                 </div>
             </div>
 
-            <img src="../assets/images/shape-3.png" alt="Shape" class="shape-1">
+            <img height="" width="" src="../assets/images/shape-3.png" alt="Shape" class="shape-1">
         </section>
         <!-- Hero area end -->
 
@@ -104,10 +104,13 @@ export default {
         axios.get(apiUrl)
             .then((response) => {
                 this.services = response.data[0].services;
+                console.log(this.services)
             })
+
             .catch((error) => {
                 console.error('Error fetching data:', error);
             });
+
     }
 };
 </script>

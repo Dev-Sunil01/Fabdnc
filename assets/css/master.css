@@ -2276,7 +2276,7 @@ img {
   }
 }
 .sec-title-4 span {
-  font-family: "newYork";
+
   padding-left: 298px;
   display: block;
 }
@@ -2340,7 +2340,7 @@ img {
   }
 }
 .sec-title-8 a {
-  font-family: "newYork";
+
   text-transform: capitalize;
 }
 .sec-title-16 {
@@ -7340,7 +7340,7 @@ img {
 }
 .rollslide_title span {
   font-weight: 400;
-  font-family: "newYork";
+  
 }
 @media only screen and (max-width: 767px) {
   .rollslide_title {
@@ -8133,9 +8133,7 @@ img {
   color: var(--black-2);
   padding-bottom: 5px;
 }
-.work8__content__title span {
-  font-family: "newYork";
-}
+
 .work8__btn {
   text-align: center;
   margin-top: 115px;
@@ -16925,7 +16923,6 @@ img {
 }
 .awards__content__title a {
   color: var(--black-2);
-  font-family: "newYork";
   position: relative;
 }
 .awards__content__title a::after {
@@ -17407,7 +17404,7 @@ img {
   margin-bottom: 30px;
 }
 .hero9_title span {
-  font-family: "newYork";
+  
   position: relative;
   padding-left: 30px;
 }
@@ -17811,7 +17808,7 @@ img {
 .hero10__content__title span {
   display: block;
   font-weight: 400;
-  font-family: "newYork";
+
 }
 .hero10__content__name {
   color: var(--white);
@@ -18781,7 +18778,7 @@ img {
 .video_text .video_title_7 {
   font-size: 20px;
   color: var(--white);
-  font-family: "newYork";
+  
 }
 @media only screen and (max-width: 767px) {
   .video_text .video_title_7 {
@@ -18795,7 +18792,7 @@ img {
 }
 
 .nominated_title_7 {
-  font-family: "newYork";
+  
   font-weight: 400;
   font-size: 100px;
   color: var(--white);
@@ -18904,9 +18901,7 @@ img {
     bottom: 3px;
   }
 }
-.tech_title span {
-  font-family: "newYork";
-}
+
 
 .single_dis {
   font-weight: 400;
@@ -19108,9 +19103,7 @@ img {
     font-size: 40px;
   }
 }
-.client__section__title span {
-  font-family: "newYork";
-}
+
 .client__section__dis {
   max-width: 240px;
   color: var(--gray-2);
@@ -26794,7 +26787,7 @@ main {
   display: block;
   position: relative;
   padding-left: 90px;
-  font-family: "newYork";
+  
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .part.showed h2 span {
@@ -27482,7 +27475,7 @@ body {
   gap: 30px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 @media only screen and (max-width: 767px) {
   .woocomerce__header-cart {

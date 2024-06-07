@@ -5,12 +5,13 @@
 export default  {
 
   buildDir: 'dist',
-  
+
 
   app: {
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
+      title: 'fabdnc nuxt'
     }
   },
 
@@ -102,11 +103,7 @@ export default  {
       publicPath: '_nuxt/dist/',
       transpile: ["gsap"],
     },
-  modules: [
-    
-    'nuxt-swiper',
-    
-  ],
+  modules: ['nuxt-swiper', "@nuxt/image"],
   vite: {
     define: {
       "process.env.DEBUG": false,
@@ -128,5 +125,3 @@ export default  {
 
 
 }
-
-

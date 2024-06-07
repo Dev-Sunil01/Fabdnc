@@ -31,7 +31,7 @@
             <div class="footer__subscribe-2">
               <form action="#">
                 <input type="text" name="email" placeholder="Enter your email">
-                <button type="submit" class="submit"><img src="../assets/images/arrow-black.png"
+                <button type="submit" class="submit"><img height="" width="" src="../assets/images/arrow-black.png"
                     alt="Arrow Icon"></button>
               </form>
             </div>
@@ -64,7 +64,7 @@
   <!-- Footer area end -->
 </template>
 
-<script setup >
+<script defer setup >
 
 const { data: items } = await useFetch('https://fabdnc.com/laravel/api/footer')
 

@@ -112,7 +112,7 @@
                                         </div>
                                         <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
                                             <div class="counter__img-3">
-                                                <img src="../assets/images/designer-team.jpg" alt="Counter Image">
+                                                <img height="" width="" src="../assets/images/designer-team.jpg" alt="Counter Image">
                                             </div>
                                         </div>
                                     </div>

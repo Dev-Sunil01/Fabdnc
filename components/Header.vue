@@ -1,13 +1,13 @@
 <template>
 	<div>
-		<header :class="{ 'fixed-header': isHeaderFixed }">
+		<header :class="{ 'sticky-header': isHeaderFixed }" class="fixed-header">
 
 			<div class="d-flex align-items-center justify-content-between container-fluid">
 				<div class="header__inner-2">
 					<div class="header__logo-2">
-						<a href="index.html" class="logo-dark"><img src="../assets/images/New-logo.png"
+						<a href="index.html" class="logo-dark"><img height="" width="" src="../assets/images/New-logo.png"
 								alt="Site Logo"></a>
-						<a href="index.html" class="logo-light"><img src="../assets/images/New-logo.png"
+						<a href="index.html" class="logo-light"><img height="" width="" src="../assets/images/New-logo.png"
 								alt="Site Logo"></a>
 					</div>
 					<div class="header__nav-2">
@@ -22,7 +22,7 @@
 
 				</div>
 				<div class="header__nav-icon-7">
-					<button class="menu-icon-2" id="open_offcanvas" @click="offcanvasOpen"><img
+					<button class="menu-icon-2" id="open_offcanvas" @click="offcanvasOpen"><img height="" width=""
 							src="../assets/images/menu-dark.png" alt="Menubar Icon"></button>
 				</div>
 			</div>
@@ -35,7 +35,7 @@
 			<div class="offcanvas__body">
 				<div class="offcanvas__left">
 					<div class="offcanvas__logo">
-						<a href="index.html"><img src="../assets/images/fab-logo.png" alt="Offcanvas Logo"></a>
+						<a href="index.html"><img height="" width="" src="../assets/images/fab-logo.png" alt="Offcanvas Logo"></a>
 					</div>
 					<div class="offcanvas__social">
 						<h3 class="social-title">Follow Us</h3>
@@ -86,14 +86,15 @@
 							<li>C-98(B),Ph 7, Ind.Area, Mohali</li>
 						</ul>
 					</div>
-					<!-- <img src="../assets/images/11.png" alt="shape" class="shape-1"> -->
+					<!-- <img height="" width="" src="../assets/images/11.png" alt="shape" class="shape-1"> -->
 					<!-- <div class="shape-2">
-						<img src="../assets/images/12.png" alt="shape">
+						<img height="" width="" src="../assets/images/12.png" alt="shape">
 					</div> -->
 				</div>
 				<div class="offcanvas__close">
-					<button type="button" id="close_offcanvas" @click="offcanvasOpen"><i
-							class="fa-solid fa-xmark"></i></button>
+					<button type="button" id="close_offcanvas" @click="offcanvasOpen">
+					       <img src="../assets/images/close.png" />
+					</button>
 				</div>
 			</div>
 		</div>
@@ -101,7 +102,7 @@
 </template>
 
 
-<script setup >
+<script defer setup >
 
 const { data: items } = await useFetch('https://fabdnc.com/laravel/api/header')
 
@@ -195,8 +196,24 @@ header {
 }
 
 .active {
-  color: green !important;
+  color: #2980b9 !important;
 }
+
+.sticky-header {
+	
+	background: #fff;
+	border: 1px solid #f9f9f9 !important;
+	box-shadow: 0 0 10px #f1f1f1;
+}
+
+#close_offcanvas img {
+	width: 24px;
+}
+
+.offcanvas__close { 
+	right: 25px ;
+}
+
 
 .fixed-header {
 	position: fixed;
@@ -204,11 +221,7 @@ header {
 	left: 0;
 	width: 100%;
 	z-index: 1000;
-	background: #fff;
-	border: 1px solid #f9f9f9;
-	box-shadow: 0 0 10px #f1f1f1;
 }
-
 
 
 

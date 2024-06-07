@@ -183,7 +183,7 @@ export default {
   </div>
   <!-- <footer>
     <a href="https://greensock.com/scrollsmoother">
-      <img
+      <img height="" width=""
         alt="ScrollSmoother"
         class="greensock-icon"
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/scroll-smoother-logo-light.svg"

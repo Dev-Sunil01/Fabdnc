@@ -3,7 +3,7 @@
         <div class="offcanvas__body">
             <div class="offcanvas__left">
                 <div class="offcanvas__logo">
-                    <a href="index.html"><img src="../assets/images/logo-Final.png" alt="Offcanvas Logo"></a>
+                    <a href="index.html"><img height="" width="" src="../assets/images/logo-Final.png" alt="Offcanvas Logo"></a>
                 </div>
                 <div class="offcanvas__social">
                     <h3 class="social-title">Follow Us</h3>
@@ -55,8 +55,8 @@
                         <li>58/4 GIRISH PARK NORTH KOLKATA WB 700006 IN</li>
                     </ul>
                 </div>
-                <img src="../assets/images/shape/11.png" alt="shape" class="shape-1">
-                <img src="../assets/images/shape/12.png" alt="shape" class="shape-2">
+                <img height="" width="" src="../assets/images/shape/11.png" alt="shape" class="shape-1">
+                <img height="" width="" src="../assets/images/shape/12.png" alt="shape" class="shape-2">
             </div>
             <div class="offcanvas__close">
                 <button type="button" id="close_offcanvas"><i class="fa-solid fa-xmark"></i></button>

@@ -34,7 +34,7 @@
                 </div>
               </div>
             </div>
-            <div class="row hero__about-row">
+            <!-- <div class="row hero__about-row">
               <div class="col-xxl-12">
                 <div class="hero__about-video">
                   <video loop muted autoplay playsinline>
@@ -42,7 +42,7 @@
                   </video>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
         <!-- Hero area end -->
@@ -81,18 +81,18 @@
             <div class="row">
               <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
                 <div class="story__img-wrapper">
-                  <img src="../assets/images/cloud-solution.jpeg" alt="Story Thumbnail" class="w-100" />
+                  <img height="" width="" src="../assets/images/cloud-solution.jpeg" alt="Story Thumbnail" class="w-100" />
                 </div>
               </div>
               <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
                 <div class="story__img-wrapper img-anim">
-                  <img src="../assets/images/designer-graphic.jpg" alt="Story Thumbnail" data-speed="auto" />
+                  <img height="" width="" src="../assets/images/designer-graphic.jpg" alt="Story Thumbnail" data-speed="auto" />
                 </div>
               </div>
               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
                 <div class="story__img-wrapper">
-                  <img src="../assets/images/designer-graphic.jpg" class="story-img-short" alt="Story Thumbnail" />
-                  <img src="../assets/images/cloud-solution.jpeg" alt="Story Thumbnail" />
+                  <img height="" width="" src="../assets/images/designer-graphic.jpg" class="story-img-short" alt="Story Thumbnail" />
+                  <img height="" width="" src="../assets/images/cloud-solution.jpeg" alt="Story Thumbnail" />
                 </div>
               </div>
             </div>
@@ -165,7 +165,7 @@
   </MainLayout>
 </template>
 
-<script setup >
+<script defer setup >
 
 const { data: items } = await useFetch("https://fabdnc.com/laravel/api/about_us")
 

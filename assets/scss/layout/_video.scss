@@ -41,7 +41,7 @@
   .video_title_7 {
     font-size: 20px;
     color: var(--white);
-    font-family: $font_newyork;
+    // font-family: $font_newyork;
 
     @media #{$sm} {
       font-size: 40px;
@@ -58,7 +58,7 @@
 // nominated 7
 
 .nominated_title_7 {
-  font-family: $font_newyork;
+  // font-family: $font_newyork;
   font-weight: 400;
   font-size: 100px;
   color: var(--white);
@@ -134,7 +134,7 @@
 
   a {
     color: var(--black-2);
-    font-family: $font_newyork;
+    // font-family: $font_newyork;
     position: relative;
 
     &::after {
@@ -161,7 +161,7 @@
   }
 
   span {
-    font-family: $font_newyork;
+    // font-family: $font_newyork;
   }
 }
 

@@ -119,9 +119,9 @@
       line-height: 0.75;
       text-transform: uppercase;
 
-      span {
-        font-family: $font_newyork;
-      }
+      // span {
+      //   font-family: $font_newyork;
+      // }
 
       @media #{$xl} {
         font-size: 160px;
@@ -150,7 +150,7 @@
 
     span {
       font-weight: 400;
-      font-family: $font_newyork;
+      // font-family: $font_newyork;
     }
 
     @media #{$sm} {

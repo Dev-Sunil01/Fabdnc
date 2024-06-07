@@ -82,32 +82,17 @@
     }
 
     &-4 {
-      font-size: 150px;
+      font-size: 7vw;
       line-height: 1;
       color: var(--black-2);
       text-transform: uppercase;
 
-      @media #{$xl} {
-        font-size: 120px;
-      }
-
-      @media #{$lg} {
-        font-size: 100px;
-      }
-
-      @media #{$md} {
-        font-size: 80px;
-      }
-
-      @media #{$sm} {
-        font-size: 48px;
-      }
 
       span {
-        font-family: $font_newyork;
+        
         padding-left: 298px;
         display: block;
-
+        color: #000; 
         @media #{$sm} {
           padding-left: 0;
         }
@@ -128,15 +113,15 @@
     }
 
     &-5 {
-      padding-left: 98px;
+      padding-left: 0;
 
-      @media #{$sm} {
-        padding-left: 0;
-      }
+   
+
 
       @media #{$lg} {
-        font-size: 120px;
-        line-height: 8.3rem;
+        
+        line-height: 68px;
+        padding-left: 0px;
       }
     }
 
@@ -164,7 +149,7 @@
       }
 
       a {
-        font-family: $font_newyork;
+      
         text-transform: capitalize;
       }
     }
@@ -198,7 +183,7 @@
 
       span {
         color: var(--black-2);
-        font-family: $font_newyork;
+  
         position: relative;
 
         &::after {

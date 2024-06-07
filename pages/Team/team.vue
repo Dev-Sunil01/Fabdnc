@@ -1,5 +1,5 @@
 <template>
-  <section class="team__area-7">
+  <section class="team__area-7 team-wrap">
     <h2 class="team__title-7 title-anim">{{ title }}</h2>
     <div class="container">
       <div class="row">
@@ -11,7 +11,7 @@
           </div>
         </div>
       </div>
-      <div class="row team-margin-bottom">
+      <div class="row ">
         <div class="col-xxl-12">
           <div class="team__items-7" ref="container">
             <a href="team-details.html" v-for="item in images" :key="item" @mousemove="handleMouseMove">
@@ -22,7 +22,9 @@
                   <h3 class="tm-name">{{ item.name }}</h3>
                 </div>
                 <h4 class="tm-role">{{ item.designation }}</h4>
-                <div class="tm-link"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="tm-link">
+                    <img src="../../assets/images/team-arrow.png" class="team-arrow" />
+                </div>
                 <div :style="{ 'background-image': 'url(' + item.team_profile + ')' }"
                   class="team__hover-7  bg-center team-hover-bgimg image"></div>
               </div>
@@ -201,6 +203,19 @@ export default {
 <style>
 .bg-center {
   background-position: center;
+}
+
+.team-arrow { 
+  width: 22px;
+  transition: all 0.3s ease-in-out;
+}
+
+.team__items-7 a:hover .team-arrow { 
+    transform: rotate(-24deg);
+}
+
+.team-wrap { 
+  padding-bottom: 80px;
 }
 
 /* .team-hover-bgimg1 {
